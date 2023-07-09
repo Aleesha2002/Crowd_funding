@@ -1,4 +1,4 @@
-export const daysleft = (deadline) => {
+export const daysLeft = (deadline) => {
   const difference = new Date(deadline).getTime() - Date.now();
   const remainingDays = difference / (1000 * 60 * 60 * 24);
 
@@ -11,7 +11,7 @@ export const calculateBarPercentage = (goal, raisedAmount) => {
   return percentage;
 };
 
-export const chackIfImage = (url, callback) => {
+export const checkIfImage = (url, callback) => {
   const img = new Image();
   img.src = url;
 
